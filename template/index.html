@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crop Prediction App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-image:url("images.jpeg");
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repeating */
+            background-attachment: fixed;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 500px;
+        }
+        h1{
+            margin-left:100px;
+
+        }
+        input{
+            width: 70%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-bottom: 4px solid black;
+        }
+        button{
+            background-color: #4CAF50; /* Green */
+            margin : auto;
+            color: white;
+            padding: 15px 100px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left:170px
+        }
+        #predi{
+            margin-left: 160px;
+            color:white;
+            /* text-align: center; */
+
+
+        }
+    </style>
+
+
+  </head>
+  <body>
+    
+    <div class="login">
+        <h1 style="color: blue;"> Crop Prediction Model</h1>
+        <form action="{{ url_for('predict')}}"method="post"> 
+            <input type="text" name="Nitrogen" placeholder="Nitrogen" required="required" /><br><br>
+            <input type="text" name="Phosphorus" placeholder="Phosphorus" required="required" /><br><br>
+            <input type="text" name="Potassium" placeholder="Potassium" required="required" /><br><br>
+            <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br><br>
+            <input type="text" name="Humidity" placeholder="Humidity" required="required" /><br><br>
+            <input type="text" name="pH" placeholder="pH" required="required" /><br><br>
+            <input type="text" name="Rainfall" placeholder="Rainfall" required="required" /><br><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form> 
+
+        <br><br>
+        <h1 id="predi">{{ prediction_text }}</h1>
+
+    </div>
+  </body>
+</html>
