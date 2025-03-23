@@ -23,7 +23,7 @@ The Random Forest method builds multiple decision trees and aggregates their pre
 Using these factors, the model suggests the best crop to grow in a given environment.
 
 ## System Design
-*SysDesign.png*
+*![Alt text](SysDesign.png)*
 
 ### Software Requirements
 - **Python** for programming
@@ -33,7 +33,7 @@ Using these factors, the model suggests the best crop to grow in a given environ
 - **HTML, CSS, and JavaScript** for the user interface
 
 ## System Flow
-*ProcessFlow.png*
+*![Alt text](ProcessFlow.png)*
 
 ## Results
 The research successfully developed a reliable and accurate crop forecast model by analyzing historical crop yield and environmental data using machine learning techniques. The model can accurately predict the best-suited crop based on the given input parameters.
