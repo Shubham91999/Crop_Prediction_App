@@ -43,7 +43,9 @@ The research successfully developed a reliable and accurate crop forecast model 
 - Integration into an **intuitive web application**
 - Users can enter environmental conditions and receive crop recommendations instantly
 
-*(Insert screenshots of the working project here)*
+*![Alt text](Screenshot 2025-03-23 at 9.26.36 AM.png)*
+*![Alt text](Screenshot 2025-03-23 at 9.27.12 AM.png)*
+*![Alt text](Screenshot 2025-03-23 at 9.27.32 AM.png)*
 
 ## Advantages
 ✔️ Precise crop forecasting using environmental factors and historical data  
